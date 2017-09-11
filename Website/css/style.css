@@ -109,18 +109,18 @@ tr:nth-child(even){
 
 
 td, th{
-    border: 1px solid #f5f5f5;
-    padding: 10px;
+  border: 1px solid #f5f5f5;
+  padding: 10px;
 }
 th{
-    text-align: center;
-    font-size: 25px;
-    font-weight: 400
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400
 }
 
 /* Contact Form */
 .error {
-    border: 2px solid red;
+  border: 2px solid red;
 }
 
 /* Contest CSS */
@@ -145,16 +145,16 @@ th{
 
 /* Navigation Squares */
 .nav-square {
-    border: none;
-    text-decoration: none;
-    display: inline-block;
-    color: aqua;
-    margin-top: 5%;
-    margin-bottom:2%;
-    background-color: aqua;
-    height: 8px;
-    width: 1px;
-    cursor: pointer;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  color: aqua;
+  margin-top: 5%;
+  margin-bottom:2%;
+  background-color: aqua;
+  height: 8px;
+  width: 1px;
+  cursor: pointer;
 }
 
 .frq {
@@ -163,13 +163,13 @@ th{
 }
 
 .current {
-    border: 1px solid #561fd1;
-    color: #561fd1;
-    background-color: #561fd1;
+  border: 1px solid #561fd1;
+  color: #561fd1;
+  background-color: #561fd1;
 }
 
 .complete {
-    border: 1px solid purple;
-    color: purple;
-    background-color: purple;
+  border: 1px solid purple;
+  color: purple;
+  background-color: purple;
 }
