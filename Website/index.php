@@ -173,7 +173,7 @@
         <!-- Student Login -->
         <div class="col-md-5">
           <h3>Student</h3>
-          <form action="http://www.inovaca.org/bcco/forms/student-login.php" method="post">
+          <form action="http://www.inovaca.org/bcco/student-login.php" method="post">
             <input type="text" name="student_id" placeholder="Student ID" required>
             <button type="submit" class="btn btn-default btn-login">Log In</button>
           </form>
@@ -189,7 +189,7 @@
         <!-- Teacher Login -->
         <div class="col-md-5">
           <h3>Teacher</h3>
-          <form action="http://www.inovaca.org/bcco/forms/school-login.php" method="post">
+          <form action="http://www.inovaca.org/bcco/school-login.php" method="post">
             <input type="text" name="school_id" placeholder="School ID" required>
             <button type="submit" class="btn btn-default btn-login">Log In</button>
           </form>
