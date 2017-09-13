@@ -21,6 +21,10 @@ h3 {
 
   color: white;
   text-align: center;
+
+  /* Prevent anything on the site from being pressed against the bottom
+  of the hero image. */
+  margin-bottom: 20px;
 }
 
 #login {
