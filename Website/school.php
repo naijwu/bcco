@@ -41,18 +41,17 @@ mysqli_close($conn);
       <?php echo file_get_contents("./global/head-tags.html") ?>
       <!-- Prevent this page from being indexed by search engines. -->
       <meta name="robots" content="noindex">
-      <title>BCCO School Info</title>
   </head>
 
   <body class="container">
 
-      <h1 class="title">BC Computing Olympiad 2017</h1>
+      <h1 class="title">BC Computing Olympiad</h1>
       <p class="text-center"><?php echo $_SESSION["school_name"] ?></p>
 
       <!-- Registered Students -->
       <h2 class="text-center" style="margin-top: 40px;">Registered Students</h2>
 
-      <p class="text-center">Please email <i>inovacomputerassociation@gmail.com</i> if you need to change a student's name or email.</p>
+      <p class="text-center">Please email <a href="mailto:bcco@inovaca.org">bcco@inovaca.org</a> if you need to change a student's name or email.</p>
 
       <table class="table table-striped text-center">
         <thead>
@@ -88,10 +87,9 @@ mysqli_close($conn);
       <a href="http://www.inovaca.org/bcco/school-add-student.php" style="text-decoration: none;">
         <button class="btn btn-default" style="margin: 0 auto; display: block; cursor: pointer;">Register A Student</button>
       </a>
-      <small class="text-center" style="display: block;">It's free.</small>
       <!-- End Add a Student -->
-
-      <!-- Results -->
+          
+      <!-- Results Hidden
       <h2 class="text-center" style="margin-top: 40px;">Results</h2>
 
       <p class="text-center">Students will only be listed if they wrote the test.</p>
@@ -100,7 +98,7 @@ mysqli_close($conn);
         <thead>
           <tr>
             <th>Full Name</th>
-            <th>Score (/18)</th>
+            <th>Score (/30)</th>
           </tr>
         </thead>
         <tbody>
@@ -122,7 +120,7 @@ mysqli_close($conn);
           ?>
         </tbody>
       </table>
-      <!-- End Results -->
+      -->
 
   </body>
 
