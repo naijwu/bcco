@@ -34,6 +34,8 @@ $stmt->fetch();
 $stmt->close();
 $school_id_exists = isset($school_name) && !empty($school_name);
 
+$conn->close();
+
 if( !$school_id_exists ) {
   // An error message will be displayed on the home page.
   include("./index.php");
