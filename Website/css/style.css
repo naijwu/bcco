@@ -13,22 +13,30 @@ h3 {
 
 /* Home Page */
 #hero {
-  background: url(../img/hero.jpg);
+  background: url(../img/hero.jpg) no-repeat;
   background-size: 100%;
-  padding: 200px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-
   color: white;
   text-align: center;
-
+  height:100vh;
+  background-size: cover;
+  background-attachment: fixed;
   /* Prevent anything on the site from being pressed against the bottom
   of the hero image. */
   margin-bottom: 20px;
 }
 
+.tab div {
+   background-color: rgba(54, 129, 204, 0.3);
+   color: white;
+   font-size: 35px;
+   cursor: pointer;
+}
+
+.tab div:hover {
+   background-color: rgba(54, 129, 204, 0.8);
+}
+
 #login {
-  padding-top: 10px ;
   text-align: center;
   color: black;
 }
@@ -47,23 +55,11 @@ h3 {
   color: white;
 }
 
-.btn-login {
-  margin-top: 16px;
-  cursor: pointer;
-}
-
-.home-menu {
-  margin-top: 16px;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 768px) {
   .vertical-line {
     height: 180px;
     width: 1px;
     background-color: black;
-    margin-left: 100px;
-    margin-bottom: 30px;
   }
 }
 
@@ -111,7 +107,6 @@ tr:nth-child(even){
   text-align: center;
 }
 
-
 td, th{
   border: 1px solid #f5f5f5;
   padding: 10px;
@@ -120,11 +115,6 @@ th{
   text-align: center;
   font-size: 25px;
   font-weight: 400
-}
-
-/* Contact Form */
-.error {
-  border: 2px solid red;
 }
 
 /* Contest CSS */
