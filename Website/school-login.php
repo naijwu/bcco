@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // Pre: student_id is passed by post.
 // Post: a session was started
 //       how-question.php is used to display the first question in the contest.

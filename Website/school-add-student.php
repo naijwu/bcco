@@ -14,7 +14,6 @@ if( session_id() == '' ) { // Session has not started
       <?php echo file_get_contents("./global/head-tags.html") ?>
       <!-- Prevent this page from being indexed by search engines. -->
       <meta name="robots" content="noindex">
-      <title>BCCO Add A Student</title>
   </head>
 
   <body class="container">

@@ -14,7 +14,7 @@ $answer = $_POST["answer"];
 
 // Commit the answer if an answer was chosen
 if( isset($answer) && !empty($answer) && isset($question) ) {
-  if( $question < $_SESSION["number_of_mc_questions"] ) {
+  if( $question < $number_of_multiple_choice_questions ) {
     // Protect against invalid inputs. This is only possible in MC questions because the
     // possibilities are limited then.
     if( $answer != "A" && $answer != "B" && $answer != "C" && $answer != "D" && $answer != "E" ) {

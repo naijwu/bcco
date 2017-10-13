@@ -3,12 +3,11 @@
 
 <head>
     <?php echo file_get_contents("./global/head-tags.html") ?>
-    <title>BC Computer Olympiad</title>
 </head>
 
 <body>
     <!-- Hero Image -->
-    <section id="hero" style="height:100vh;background-size: cover;background-attachment: fixed;">
+    <section id="hero">
         <!-- Site Name -->
         <div class="text-center" style="margin-left:10%;margin-right:10%;padding-top:3%;">
             <div class="row tab">
@@ -46,7 +45,7 @@
       if( isset($student_id_exists) && !$student_id_exists ) {
         echo('<div class="alert alert-danger alert-dismissable slideInDown animated">
           <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-          <strong>Uh Oh</strong> Sorry, we can&#39;t recognize that student ID.
+          <strong>Error</strong> We do not recongize that student ID.
         </div>');
       } else if( isset($school_id_exists) && !$school_id_exists ) {
         echo('<div class="alert alert-danger alert-dismissable slideInDown animated">

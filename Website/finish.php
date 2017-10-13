@@ -35,7 +35,6 @@ $stmt->close();
 
     <!-- Prevent this page from being indexed by search engines. -->
     <meta name="robots" content="noindex">
-    <title>BCCO Completed</title>
 </head>
 
 <body>
