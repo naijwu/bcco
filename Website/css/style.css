@@ -20,9 +20,6 @@ h3 {
   height:100vh;
   background-size: cover;
   background-attachment: fixed;
-  /* Prevent anything on the site from being pressed against the bottom
-  of the hero image. */
-  margin-bottom: 20px;
 }
 
 .tab div {
@@ -53,14 +50,6 @@ h3 {
   background-color: #bfbfbf;
   border-radius: 2px;
   color: white;
-}
-
-@media screen and (min-width: 768px) {
-  .vertical-line {
-    height: 180px;
-    width: 1px;
-    background-color: black;
-  }
 }
 
 /* Review Page */
