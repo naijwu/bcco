@@ -7,7 +7,6 @@
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
       <!-- Prevent this page from being indexed by search engines. -->
       <meta name="robots" content="noindex">
-      <title>BCCO Review Page</title>
   </head>
 
 

@@ -14,7 +14,6 @@
 
     <!-- Prevent this page from being indexed by search engines. -->
     <meta name="robots" content="noindex">
-    <title>BCCO Question <?php echo $question_display_number ?>/<?php echo $_SESSION["total_number_of_questions"] ?></title>
 </head>
 
 <body>

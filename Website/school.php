@@ -43,21 +43,27 @@ mysqli_close($conn);
       <meta name="robots" content="noindex">
   </head>
 
-  <body class="container">
+  <body class="container" style="padding-bottom:32px;">
 
       <h1 class="title">BC Computing Olympiad</h1>
-      <p class="text-center"><?php echo $_SESSION["school_name"] ?></p>
+      <p class="text-center">School Name: <?php echo $_SESSION["school_name"] ?></p>
 
+      <!-- Add a Student -->
+      <a href="http://www.inovaca.org/bcco/school-add-student.php" style="text-decoration: none;">
+        <button class="btn btn-default" style="margin: 0 auto; display: block; cursor: pointer;">Register A Student</button>
+      </a>
+      <!-- End Add a Student -->
+    
       <!-- Registered Students -->
       <h2 class="text-center" style="margin-top: 40px;">Registered Students</h2>
 
-      <p class="text-center">Please email <a href="mailto:bcco@inovaca.org">bcco@inovaca.org</a> if you need to change a student's name or email.</p>
+      <p class="text-center">Please email <a href="mailto:bcco@inovaca.org">bcco@inovaca.org</a> if you need to change a student's information.</p>
 
       <table class="table table-striped text-center">
         <thead>
           <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
+            <th>First Name</th>
+            <th>Last Name</th>
             <th>Grade</th>
             <th>Student ID</th>
           </tr>
@@ -82,12 +88,6 @@ mysqli_close($conn);
         </tbody>
       </table>
       <!-- End Registered Students -->
-
-      <!-- Add a Student -->
-      <a href="http://www.inovaca.org/bcco/school-add-student.php" style="text-decoration: none;">
-        <button class="btn btn-default" style="margin: 0 auto; display: block; cursor: pointer;">Register A Student</button>
-      </a>
-      <!-- End Add a Student -->
           
       <!-- Results Hidden
       <h2 class="text-center" style="margin-top: 40px;">Results</h2>
