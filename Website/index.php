@@ -29,12 +29,14 @@
             <center>
                 <img src="/bcco/img/bcco-logo.png" alt="BCCO Logo" style="width:140px;">
             </center>
-            <h1 style="text-align: center; font-size: 75px;">British Columbia Computer Olympiad</h1>
+            <h1 style="text-align: center; font-size: 75px;">British Columbia Computing Olympiad</h1>
             <!-- End Site Name -->
 
             <!-- Subtitle -->
             <p>Presented by <a href="http://www.inovaca.org" style="color: white;"><strong><em>Inova Computer Association</em></strong></a></p>
             <!-- End Subtitle -->
+
+            <a href=""><img src="https://scontent-sea1-1.xx.fbcdn.net/v/t34.0-12/22497354_1434328349969279_2086093501_n.png?oh=045cf3190aff635a62c653839860e323&oe=59E2BC53" alt="" width="100px;" style="margin-top:5%;"></a>
         </div>
     </section>
     <!-- End Hero Image -->
@@ -59,11 +61,11 @@
         <!-- Login Forms -->
         <section id="login">
             <div class="row" style="margin:0px;">
-                <div class="col-md-6" style="border-right: solid lightgray 3px; padding: 16px 0px 16px 0px;">
+                <div class="col-md-6" style="border-right: solid #FAFAFA 3px; padding: 16px 0px 16px 0px;">
                     <p style="font-size:50px;font-weight:bold;">LOGIN</p>
                 </div>
                 <!-- Teacher Login -->
-                <div class="col-md-6 text-center" style="border-left: solid lightgray 3px; padding: 16px 0px 16px 0px;">
+                <div class="col-md-6 text-center" style="border-left: solid #FAFAFA 3px; padding: 16px 0px 16px 0px;">
                     <center>
                         <form action="http://www.inovaca.org/bcco/school-login.php" method="post" style="display:inline;">
                             <label style="margin-right:12px;">Teacher:</label>
@@ -125,7 +127,7 @@
                         <h2>Who</h2>
                     </div>
                     <div class="col-sm-10">
-                        <p>The contest is avaliable to anyone in grades 7 to 9 in British Columbia. There is a grade 7 division and a grade 8/9 division for awards.
+                        <p>The contest is avaliable to anyone in grades 7 to 9 in an official school of British Columbia.
                         </p>
                     </div>
                 </div>
@@ -149,35 +151,35 @@
 
 
         <!-- Sponsors -->
-  <a class="anchor" id="sponsors"></a>
+        <a class="anchor" id="sponsors"></a>
         <div class="container text-center" style="padding-bottom:16px;padding-top:16px;">
-          <hr>
-            <h2 style="font-weight:bold;">Sponsors</h2><hr>
+            <hr>
+            <h2 style="font-weight:bold;">Sponsors</h2>
+            <hr>
             <div class="row">
-                <span class="mile">
-                <a href="http://www.hivevancouver.com/"><img src="/img/sponsors/hive.png" alt="" style="height:160px;">
-                </a>
-            </span>
-                <span class="mile">
-                <a href="https://www.codeschool.com/"><img src="/img/sponsors/codeschool.png" alt="" style="height:160px;">
-                </a>
-            </span>
-            </div>
-            </br>
-            <div class="row">
-                <span class="mile">
-                <a href="https://www.lighthouselabs.ca/"><img src="/img/sponsors/lighthouselabs.png" alt="" style="height:100px;">
-                </a>
-          </span>
-                <span class="mile">
-                <a href="https://www.redacademy.com"><img src="/img/sponsors/redacademy.png" alt="" style="height:100px;"></a>
-            </span>
-            </div>
-            </br>
-            <div class="row">
-                <div class="col-sm-offset-3 col-sm-6">
-                    <a href="http://www.pacificacademy.net/"><img src="/img/sponsors/pacificacademy.png" alt="" style="height:160px;">
+                <div class="col-sm-6">
+                    <a href="http://www.hivevancouver.com/"><img src="/img/sponsors/hive.png" alt="" style="height:160px;">
                     </a>
+                </div>
+                <div class="col-sm-6">
+                    <a href="https://www.codeschool.com/"><img src="/img/sponsors/codeschool.png" alt="" style="height:160px;">
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <a href="https://www.lighthouselabs.ca/"><img src="/img/sponsors/lighthouselabs.png" alt="" style="height:100px;">
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <a href="https://www.redacademy.com"><img src="/img/sponsors/redacademy.png" alt="" style="height:100px;"></a>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="http://www.pacificacademy.net/"><img src="/img/sponsors/pacificacademy.png" alt="" style="height:160px;"></a>
                 </div>
             </div>
         </div>
