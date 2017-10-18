@@ -45,6 +45,10 @@ if( !$student_id_exists ) {
   // for this student.
   if( $end_time != 0 ) {
     $_SESSION["end_time"] = $end_time;
+  } else {
+    // It is possible another student used this computer before
+    // causing the SESSION variable to be set.
+    $_SESSION["end_time"] = 0;
   }
 
   // Get the student's school name from the database
