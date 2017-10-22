@@ -47,24 +47,13 @@ mysqli_close($conn);
 
       <h1 class="title">BC Computing Olympiad</h1>
       <p class="text-center">School Name: <?php echo $_SESSION["school_name"] ?></p>
-      
-    <!-- Teacher Info -->
-    <form>
-        <fieldset>
-            <legend>Teacher Info:</legend>
-                <input type="text" name="teachername" placeholder="Teacher's Full Name"><br>
-                <input type="text" name="teacheremail" placeholder="Teacher's Email">
-                <input type="submit" value="Change Teacher Info">
-        </fieldset>
-      </form>
-      <!-- Teacher Info End -->
-      
+
       <!-- Add a Student -->
       <a href="http://www.inovaca.org/bcco/school-add-student.php" style="text-decoration: none;">
         <button class="btn btn-default" style="margin: 0 auto; display: block; cursor: pointer;">Register A Student</button>
       </a>
       <!-- End Add a Student -->
-      
+    
       <!-- Registered Students -->
       <h2 class="text-center" style="margin-top: 40px;">Registered Students</h2>
 
