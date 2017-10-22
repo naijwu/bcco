@@ -23,7 +23,7 @@ if( session_id() == '' ) { // Session has not started
 
       <!-- Register A Student Form -->
       <h2 style="margin-top:32px;" class="text-center">Register A Student</h2>
-      <form style="margin-left: 5%; margin-right: 5%;" action="http://www.inovaca.org/bcco/forms/add-student.php" method="post" onsubmit="return check();">
+      <form style="margin-left: 5%; margin-right: 5%;" action="http://www.inovaca.org/bcco/forms/add-student.php" method="post">
         <div class="form-group">
           <label>First Name:</label>
           <input class="form-control" type="text" placeholder="First Name" name="cf_first_name" required>

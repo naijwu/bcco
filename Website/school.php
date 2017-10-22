@@ -45,93 +45,95 @@ mysqli_close($conn);
 
   <body class="container" style="padding-bottom:32px;">
 
-      <h1 class="title">BC Computing Olympiad</h1>
-      <p class="text-center">School Name: <?php echo $_SESSION["school_name"] ?></p>
-      
+    <h1 class="title">BC Computing Olympiad</h1>
+    <p class="text-center">School Name: <?php echo $_SESSION["school_name"] ?></p>
+
     <!-- Teacher Info -->
-    <form>
-        <fieldset>
-            <legend>Teacher Info:</legend>
-                <input type="text" name="teachername" placeholder="Teacher's Full Name"><br>
-                <input type="text" name="teacheremail" placeholder="Teacher's Email">
-                <input type="submit" value="Change Teacher Info">
-        </fieldset>
-      </form>
-      <!-- Teacher Info End -->
-      
-      <!-- Add a Student -->
-      <a href="http://www.inovaca.org/bcco/school-add-student.php" style="text-decoration: none;">
-        <button class="btn btn-default" style="margin: 0 auto; display: block; cursor: pointer;">Register A Student</button>
-      </a>
-      <!-- End Add a Student -->
-      
-      <!-- Registered Students -->
-      <h2 class="text-center" style="margin-top: 40px;">Registered Students</h2>
+    <h2 class="text-center" style="margin-top: 40px;">Teacher&#8217;s Info</h2>
+    <form action="http://www.inovaca.org/bcco/forms/update-teacher-info.php" method="post">
+      <div class="form-group">
+        <input class="form-control" type="text" name="teacher_name" placeholder="Teacher&#8217;s Full Name" value="<?php echo($_SESSION['teacher_name']); ?>" required>
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="teacher_email" placeholder="Teacher&#8217;s Email" value="<?php echo($_SESSION['teacher_email']); ?>" required>
+      </div>
+      <button class="btn btn-default" style="margin: 0 auto; display: block; cursor: pointer;">Update Teacher Info</button>
+    </form>
+    <!-- Teacher Info End -->
 
-      <p class="text-center">Please email <a href="mailto:bcco@inovaca.org">bcco@inovaca.org</a> if you need to change a student's information.</p>
+    <!-- Registered Students -->
+    <h2 class="text-center" style="margin-top: 40px;">Registered Students</h2>
 
-      <table class="table table-striped text-center">
-        <thead>
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Grade</th>
-            <th>Student ID</th>
-          </tr>
-        </thead>
-        <tbody>
-          <?php
+    <p class="text-center">Please email <a href="mailto:bcco@inovaca.org">bcco@inovaca.org</a> if you need to change a student's information.</p>
 
-          // Any array can be used with count().
-          // All we need is the number of students that go to this school.
-          $i = 0;
-          while( $i < count($first_names) ) {
+    <table class="table table-striped text-center">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Grade</th>
+          <th>Student ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+
+        // Any array can be used with count().
+        // All we need is the number of students that go to this school.
+        $i = 0;
+        while( $i < count($first_names) ) {
+          echo("<tr>");
+          echo("<td>" . $first_names[$i] . "</td>");
+          echo("<td>" . $last_names[$i] . "</td>");
+          echo("<td>" . $grades[$i] . "</td>");
+          echo("<td>" . $student_ids[$i]. "</td>");
+          echo("</tr>");
+          $i += 1;
+        }
+
+        ?>
+      </tbody>
+    </table>
+    <!-- End Registered Students -->
+
+    <!-- Add a Student -->
+    <a href="http://www.inovaca.org/bcco/school-add-student.php" style="text-decoration: none;">
+      <button class="btn btn-default" style="margin: 0 auto; display: block; cursor: pointer;">Register A Student</button>
+    </a>
+    <!-- End Add a Student -->
+
+    <!-- Results Hidden
+    <h2 class="text-center" style="margin-top: 40px;">Results</h2>
+
+    <p class="text-center">Students will only be listed if they wrote the test.</p>
+
+    <table class="table table-striped text-center">
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Score (/30)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+
+        // Any array can be used with count().
+        // All we need is the number of students that go to this school.
+        $i = 0;
+        while( $i < count($first_names) ) {
+          if( $scores[$i] != $student_did_not_write_test ) {
             echo("<tr>");
-            echo("<td>" . $first_names[$i] . "</td>");
-            echo("<td>" . $last_names[$i] . "</td>");
-            echo("<td>" . $grades[$i] . "</td>");
-            echo("<td>" . $student_ids[$i]. "</td>");
+            echo("<td>" . $first_names[$i] . " " . $last_names[$i] . "</td>");
+            echo("<td>" . $scores[$i] . "</td>");
             echo("</tr>");
-            $i += 1;
           }
+          $i += 1;
+        }
 
-          ?>
-        </tbody>
-      </table>
-      <!-- End Registered Students -->
-          
-      <!-- Results Hidden
-      <h2 class="text-center" style="margin-top: 40px;">Results</h2>
-
-      <p class="text-center">Students will only be listed if they wrote the test.</p>
-
-      <table class="table table-striped text-center">
-        <thead>
-          <tr>
-            <th>Full Name</th>
-            <th>Score (/30)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <?php
-
-          // Any array can be used with count().
-          // All we need is the number of students that go to this school.
-          $i = 0;
-          while( $i < count($first_names) ) {
-            if( $scores[$i] != $student_did_not_write_test ) {
-              echo("<tr>");
-              echo("<td>" . $first_names[$i] . " " . $last_names[$i] . "</td>");
-              echo("<td>" . $scores[$i] . "</td>");
-              echo("</tr>");
-            }
-            $i += 1;
-          }
-
-          ?>
-        </tbody>
-      </table>
-      -->
+        ?>
+      </tbody>
+    </table>
+    -->
 
   </body>
 
