@@ -70,14 +70,14 @@
                         <form action="http://www.inovaca.org/bcco/school-login.php" method="post" style="display:inline;">
                             <label style="margin-right:12px;">Teacher:</label>
                             <input type="text" name="school_id" placeholder="School ID" required style="margin-right:8px;">
-                            <button type="submit" class="btn btn-default">Log In</button>
+                            <button type="submit" class="btn btn-default btn-login">Log In</button>
                         </form>
                         <br>
                         <br>
                         <form action="http://www.inovaca.org/bcco/student-login.php" method="post" style="display:inline;">
                             <label style="margin-right:10px;">Student:</label>
                             <input type="text" name="student_id" placeholder="Student ID" required style="margin-right:8px;">
-                            <button type="submit" class="btn btn-default">Log In</button>
+                            <button type="submit" class="btn btn-default btn-login">Log In</button>
                         </form>
                     </center>
                 </div>

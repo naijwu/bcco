@@ -43,6 +43,10 @@ h3 {
   margin: auto;
 }
 
+.btn-login {
+  cursor: pointer;
+}
+
 #info {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
